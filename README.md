@@ -1,10 +1,9 @@
 # User Login System
 
-## Completely built on nodeJs
 
 ## Description of project
 
-It will take user input credentials using jade built forms and submit it to nodeJs service.
+Completely built on nodeJs. It will take user input credentials using jade built forms and submit it to nodeJs service.
 NodeJs service will be connected to MongoDB through local host server and send data to mongoDB using models.
 Before sending to data to MongoDB, Password field will be encrypted using Bcrypt module. Therefore Data base will be having encrypted password.
 
@@ -37,7 +36,7 @@ bcrypt.hash(newUser.password,10,function(err,hash){
 
 **MongoDb** : This is the Database that is used to store data.
 
-**Passport**
+**Passport** : 
 It is used to check and verify user input passport.
 If password entered in correct then redirect user to home page else redirect back to login page.
 For documentation refer "http://www.passportjs.org/"
