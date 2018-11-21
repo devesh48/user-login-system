@@ -1,7 +1,6 @@
 # User Login System
 
 ## Completely built on nodeJs
----
 
 ## Description of project
 
