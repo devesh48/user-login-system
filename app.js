@@ -69,6 +69,12 @@ app.use(function (req,res,next){
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
+
+app.get('*',function(req,res,next){
+	res.locals.user = req.user || null;
+	next();
+});
+
 //File upload handler
 app.use(multer({dest : './uploads'}).none);
 
